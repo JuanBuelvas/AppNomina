@@ -30,7 +30,7 @@ userController.create = (req, res) => {
                 res.status(400).send({});
             }
             //si inserto correctamente
-            users.Id = resp.rows[0].id
+            //users.Id = resp.rows[0].id
             res.status(201).send(users);
         })
         .catch((error) => {
